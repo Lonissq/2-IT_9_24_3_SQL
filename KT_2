@@ -1,0 +1,23 @@
+Добавление ролей:
+
+CREATE USER 'rl_admin'@'localhost' IDENTIFIED BY 'solarwinds123';
+GRANT ALL PRIVILEGES ON `schema_atvechau`.* TO 'rl_admin'@'localhost';
+CREATE USER 'rl_customer'@'localhost' IDENTIFIED BY 'solarwinds123';
+GRANT ALL PRIVILEGES ON `schema_atvechau`.* TO 'rl_customer'@'localhost';
+CREATE USER 'rl_leader_group'@'localhost' IDENTIFIED BY 'solarwinds123';
+GRANT ALL PRIVILEGES ON `schema_atvechau`.* TO 'rl_leader_group'@'localhost';
+CREATE USER 'rl_employee_groupe'@'localhost' IDENTIFIED BY 'solarwinds123';
+GRANT ALL PRIVILEGES ON `schema_atvechau`.* TO 'rl_employee_groupe'@'localhost';
+CREATE USER 'rl_accountant'@'localhost' IDENTIFIED BY 'solarwinds123';
+GRANT ALL PRIVILEGES ON `schema_atvechau`.* TO 'rl_accountant'@'localhost';
+CREATE USER 'rl_scheduler'@'localhost' IDENTIFIED BY 'solarwinds123';
+GRANT ALL PRIVILEGES ON `schema_atvechau`.* TO 'rl_schedulern'@'localhost';
+
+Проверка прав ролей:
+
+SHOW GRANTS FOR 'rl_admin'@'localhost';
+SHOW GRANTS FOR 'rl_customer'@'localhost';
+SHOW GRANTS FOR 'rl_leader_group'@'localhost';
+SHOW GRANTS FOR 'rl_employee_groupe'@'localhost';
+SHOW GRANTS FOR 'rl_accountant'@'localhost';
+SHOW GRANTS FOR 'rl_scheduler'@'localhost';
